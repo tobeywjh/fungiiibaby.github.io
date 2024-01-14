@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="zh_tw">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>fungibaby</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./assets/css/docs.theme.min.css" />
+    <link
+      rel="stylesheet"
+      href="./assets/owlcarousel/assets/owl.carousel.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="./assets/owlcarousel/assets/owl.theme.default.min.css"
+    />
+    <link href="./assets/css/center_transform.css" rel="stylesheet" />
+    <script src="./assets/vendors/jquery.min.js"></script>
+    <script src="./assets/owlcarousel/owl.carousel.js"></script>
+    <link href="./css/funji.css" rel="stylesheet" />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#"><img src="./img/logo.png" /></a>
+      </div>
+      <div class="container-fluid">
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#"
+                >About funji</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">A</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">B</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">C</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <section id="demos">
+      <div class="row">
+        <div class="large-12 columns">
+          <h4 id="center-with-loop"></h4>
+          <div class="loop owl-carousel owl-theme">
+            <div class="item">
+              <img src="./img/baby-06.png" />
+            </div>
+            <div class="item">
+              <img src="./img/baby-07.png" />
+            </div>
+            <div class="item">
+              <img src="./img/baby-08.png" />
+            </div>
+            <div class="item">
+              <img src="./img/baby-09.png" />
+            </div>
+            <div class="item">
+              <img src="./img/baby-10.png" />
+            </div>
+            <div class="item">
+              <img src="./img/baby-11.png" />
+            </div>
+          </div>
+
+          <script>
+            jQuery(document).ready(function ($) {
+              $(".loop").owlCarousel({
+                center: true,
+                items: 2,
+                loop: true,
+                margin: 10,
+                responsive: {
+                  600: {
+                    items: 4,
+                  },
+                },
+              });
+              $(".nonloop").owlCarousel({
+                center: true,
+                items: 2,
+                loop: false,
+                margin: 10,
+                responsive: {
+                  600: {
+                    items: 4,
+                  },
+                },
+              });
+            });
+          </script>
+        </div>
+      </div>
+    </section>
+
+    <div id="carouselExampleIndicators" class="carousel slide">
+      <div class="carousel-indicators">
+        <button
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide-to="0"
+          class="active"
+          aria-current="true"
+          aria-label="Slide 1"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide-to="1"
+          aria-label="Slide 2"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide-to="2"
+          aria-label="Slide 3"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide-to="3"
+          aria-label="Slide 4"
+        ></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="./img/01.jpg" class="d-block w-100" alt="..." />
+        </div>
+        <div class="carousel-item">
+          <img src="./img/02.jpg" class="d-block w-100" alt="..." />
+        </div>
+        <div class="carousel-item">
+          <img src="./img/03.jpg" class="d-block w-100" alt="..." />
+        </div>
+        <div class="carousel-item">
+          <img src="./img/04.jpg" class="d-block w-100" alt="..." />
+        </div>
+      </div>
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#carouselExampleIndicators"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#carouselExampleIndicators"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+    <div class="intro">
+      <div class="container">
+        <div class="row">
+          <div class="col-3 offset-1">
+            <p class="tittle">About Fungi</p>
+          </div>
+          <div class="col-6 offset-1">
+            <a class="text-tittle"><p>子囊菌門</p></a>
+            <p class="text">
+              子囊孢子是這類真菌的有性生殖之孢子，因為這類真菌的孢子是在子囊中產生，所以稱為子囊孢子。日常生活中熟知的酵母菌、羊肚菌、冬蟲夏草及真菌與藻類共生的地衣…等等，都是這一類的真菌。
+            </p>
+            <a class="text-tittle"><p>擔子菌門</p></a>
+            <p class="text">
+              這類真菌在子實層中會產生有性生殖之擔子柄及擔孢子，日常生活中所熟悉的食用真菌及藥用真菌多屬這一類，如香菇、木耳、靈芝、桑黃、金針菇，而食用的筊白筍亦是擔子菌的菇黑穗菌感染菰草後，刺激菰草的莖基部澎大，變形成我們食用的筊白筍。另外與微管束植物形成共生關係的外生菌根菌亦是擔子菌的成員。
+            </p>
+            <a class="text-tittle"><p>接合菌門</p></a>
+            <p class="text">
+              此一類的真菌的主要特徵是菌絲體不具隔板，無性生殖的分生孢子位於菌絲末端之孢子囊，有性生殖會產生接合孢子。常見的如麵包黴、水玉黴，會與植物產生共生關係的內生菌根菌都是這一類的真菌。
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+    <footer>
+      <p>&copy; 2024 圖鑑網站. All rights reserved.</p>
+    </footer>
+  </body>
+</html>
